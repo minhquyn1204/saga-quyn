@@ -1,0 +1,19 @@
+.HeaderMain{
+        .Header{
+        width: 100%;
+        max-width: 1414px;
+        height: 92px;
+        text-align: center;
+        position: fixed;
+        z-index: 99;
+        top: 0;
+        background: white;
+        .Logo{
+            img{
+                margin-top: 1.5%;
+                width: 130px;
+                height: 81px;
+            }
+        }
+    }   
+}
