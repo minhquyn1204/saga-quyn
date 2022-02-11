@@ -5,6 +5,7 @@ import socket from './socket';
 import orm from './orm';
 import auth from './auth';
 import core from './core';
+import usersReducer from './users';
 import authenticateForm from './forms/authenticate';
 import userCreateForm from './forms/user-create';
 import projectCreateForm from './forms/project-create';
@@ -18,4 +19,5 @@ export default combineReducers({
   authenticateForm,
   userCreateForm,
   projectCreateForm,
+  data:usersReducer,
 });

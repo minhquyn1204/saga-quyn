@@ -1,24 +1,31 @@
-import { getAccessToken } from '../utils/access-token-storage';
-import ActionTypes from '../constants/ActionTypes';
+// import { ActionTypes } from "../constants/ActionTypes"
 
-const initialState = {
-  accessToken: getAccessToken(),
-  userId: null,
-};
+// const initialState = {
+//   users: [],
+//   loading: false,
+//   error: null,
+// }
 
-export default (state = initialState, { type, payload }) => {
-  switch (type) {
-    case ActionTypes.AUTHENTICATE_SUCCEEDED:
-      return {
-        ...state,
-        accessToken: payload.accessToken,
-      };
-    case ActionTypes.CURRENT_USER_FETCH_SUCCEEDED:
-      return {
-        ...state,
-        userId: payload.user.id,
-      };
-    default:
-      return state;
-  }
-};
+// export default function auth(state = initialState, action) {
+//   switch (action.type) {
+//     case ActionTypes.GET_USERS_REQUESTED:
+//       return {
+//         ...state,
+//         loading: true,
+//       }
+//     case ActionTypes.GET_USERS_SUCCESS:
+//       return {
+//         ...state,
+//         loading: false,
+//         users: action.users
+//       }
+//     case ActionTypes.GET_USERS_FAILED:
+//       return {
+//         ...state,
+//         loading: false,
+//         error: action.message,
+//       }
+//     default:
+//       return state
+//   }
+// }

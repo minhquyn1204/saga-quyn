@@ -1,19 +1,81 @@
 .HeaderMain{
-        .Header{
         width: 100%;
         max-width: 1414px;
-        height: 92px;
-        text-align: center;
+        height: 80px;
         position: fixed;
-        z-index: 99;
+        z-index: 1;
         top: 0;
-        background: white;
+        background: #fff;
+        justify-content: space-between;
+        display: flex;
+        align-items: center;
+        border: 1px solid black;
         .Logo{
-            img{
-                margin-top: 1.5%;
-                width: 130px;
-                height: 81px;
+            display: flex;
+            margin-left: 24px;
+            svg{
+                width: 32px;
+                height: 32px;
+                color: #e60023;
+            }
+            h1{
+                text-align: left;
+                color: #e60023;
+                font-weight: 700;
+                font-size: 19px;
+                padding: 6px 1px;
             }
         }
-    }   
-}
+        .Navbar{
+            font-size: 15px;
+            font-weight: 700;
+            height: 56px;
+            padding: 0 20px;
+            display: flex;
+            align-items: center;
+           .link{
+               margin-right: 24px;
+               display: flex;
+            a{
+                text-align: left;
+                margin-right: 16px;
+                text-decoration: none;
+                color: #211922;
+            }
+           }
+        
+               .login{
+                    Button{
+                    margin-right: 15px;
+                    background: #e60023;
+                    border-radius: 30px;
+                    height: 40px;
+                    font-size: 16px;
+                    width: 100px;
+                    border: snow;
+                    border-color:snow ;
+                    &:hover{
+                        background: #ad081b;
+                        border-color:snow ;
+                    }
+                }
+               }
+            
+            .register{
+                Button{
+                    margin-right: 8px;
+                    background: #efefef;
+                    border-radius: 30px;
+                    height: 40px;
+                    font-size: 16px;
+                    font-weight: 700;
+                    color: #211922;
+                    border: none;
+                    &:hover{
+                        background: #878787;
+                    }
+                }
+                
+            }
+        }
+}   

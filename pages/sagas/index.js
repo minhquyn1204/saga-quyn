@@ -1,15 +1,6 @@
-import { call, select } from 'redux-saga/effects';
+import {all} from 'redux-saga/effects';
+import {onLoadUser,onCreateUser,onDeleteUser} from './handlers/fetchUser';
 
-import loginSaga from './login';
-import coreSaga from './core';
-import { accessTokenSelector } from '../selectors';
-
-export default function* rootSaga() {
-  const accessToken = yield select(accessTokenSelector);
-
-  if (!accessToken) {
-    yield call(loginSaga);
-  }
-
-  yield call(coreSaga);
+export default function* rootsaga(){
+    yield all([onLoadUser(),onCreateUser(),onDeleteUser()])
 }
