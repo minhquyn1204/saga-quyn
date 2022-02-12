@@ -36,3 +36,15 @@ export const deleteUserError = (error) =>({
   type: ActionTypes.DELETE_USER_ERROR, 
   payoad: error,
 })
+ 
+export const UpdateUserStart = (id, formValue) =>({
+  type:ActionTypes.UPDATE_USER_START,
+  payload: {id, formValue},
+})
+export const UpdateUserSuccess = () =>({
+  type:ActionTypes.UPDATE_USER_SUCCESS,
+})
+export const UpdateUserError = (error) =>({
+  type:ActionTypes.UPDATE_USER_ERROR,
+  payload: error,
+})

@@ -1,7 +1,7 @@
 import React from 'react'
 import styles from './Banner.module.scss'
 import { useEffect } from 'react'
-import { loadUserStart,deleteUserStart } from '../../../actions/getUsers'
+import { loadUserStart,deleteUserStart,onUpdateUser } from '../../../actions/getUsers'
 import { useDispatch, useSelector } from 'react-redux'
 import Link from 'next/link'
 import DeleteIcon from '@material-ui/icons/Delete'
@@ -18,6 +18,9 @@ export default function Banner() {
                 dispatch(deleteUserStart(id));
             }
     }
+    const onUpdate = (id) =>{
+        dispatch(onUpdateUser(id))
+      }
    return(
        <div className={styles.Banner} >
            <MDBTable>
@@ -46,7 +49,7 @@ export default function Banner() {
                                 <DeleteIcon/>
                             </button>
                             <button>
-                                <Link href={`/editUser/${user.id}`}>edit</Link>
+                                <Link onClick={()=>onUpdate(user.id)} href={`/editUser/${user.id}`}>edit</Link>
                             </button>
                            </td>
                            <td>x</td>

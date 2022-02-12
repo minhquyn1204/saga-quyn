@@ -6,7 +6,7 @@ import IndexHome from './components/IndexHome'
 export default function Home() {
   return (
     <div className={styles.container}>
-      <IndexHome />
+  <IndexHome />
     </div>
   )
 }

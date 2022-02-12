@@ -1,11 +1,46 @@
 {
   "users": [
     {
-      "name": "a",
+      "name": "Lê Minh Quyn",
+      "email": "minhquyn12014@gmail.com",
+      "password": "123",
+      "phone": "0988796277",
+      "id": 2
+    },
+    {
+      "name": "Quyn",
+      "email": "minhquyn0803@gmail.com",
+      "password": "12345",
+      "phone": "0988796277",
+      "id": 4
+    },
+    {
+      "name": "quyn",
       "email": "a@gmail.com",
       "password": "a",
-      "phone": "11111",
-      "id": 1
+      "phone": "1",
+      "id": 5
+    },
+    {
+      "name": "Quyn",
+      "email": "minhquyn1204@gmail.com",
+      "password": "123",
+      "phone": "0988796277",
+      "id": 6
+    },
+    {
+      "name": "Quyn",
+      "email": "minhquyn1204@gmail.com",
+      "password": "123",
+      "phone": "0988796277",
+      "id": 7
+    },
+    {
+      "name": "Lê Minh Quyn",
+      "email": "minhquyn12014@gmail.com",
+      "password": "123",
+      "phone": "0988796277",
+      "id": 8
     }
   ]
 }
